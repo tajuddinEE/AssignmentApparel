@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(135deg, hsl(0,0%,100%), rgb(253, 242, 242));
+    height:100%;
+}
+.logo{
+    padding: 30px;
+}
+.image{
+    width: 100%;
+    height: 250px;
+}
+.desktop{
+    display: none;
+}
+.wcs{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 50px;
+    letter-spacing: 10px;
+    line-height: 2.5rem;
+}
+.hello{
+    width: 280px;
+    margin: 0 auto;
+    font-size: 14px;
+    padding-top:20px;
+    padding-bottom: 40px;
+    text-align: center;
+    line-height: 1.4rem;
+    color: hsl(0, 36%, 70%);
+}
+.email{
+    display: flex;
+    justify-content: center;
+    padding-bottom:80px;
+}
+input{
+    border-radius: 30px;
+    width: 280px;
+    height: 8vh;
+    border-color: hsl(0, 6%, 24%);
+    border-width: 0.01px;
+    border-style: solid;
+    background: none;
+}
+::placeholder{
+    color: hsl(0, 36%, 70%);
+    padding-left: 30px;
+}
+button{
+    border-radius: 30px;
+    height: 8vh;
+    width: 100px;
+    font-size:2rem;
+    margin-left:-50px ;
+    background-color:#F09A99;
+    border-style: none;
+    color: white;
+}
+.span1{
+    color: hsl(0, 36%, 70%);
+}
+.span2{
+    color: hsl(0, 6%, 24%);
+    font-weight: bold;
+}
+@media screen and (min-width: 1024px) {
+    body{
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        margin-left: 15vw;
+    }
+    .image{
+        display: none;
+    }
+    .desktop{
+        display: inline;
+        float: right;
+        height: 100vh;
+        width: 40vw;
+    }
+    .logo{
+        padding:40px 0 80px;
+    }
+    .wcs{
+        text-align: left;
+    }
+    .hello{
+        margin: 0;
+        width: 350px;
+        text-align: left;
+    } 
+    .email{
+        justify-content: left;
+    }
+    input{
+        width: 300px;
+    }
+}
